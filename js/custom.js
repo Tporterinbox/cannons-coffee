@@ -1,5 +1,17 @@
 /* JavaScript coming soon! */
 
-const form = document.querySelector("form");
+let form = document.querySelector("#form");
+console.log(form);
+form.addEventListener("submit", onFormSubmit);
 
-form.addEventListener(submit)
+function onFormSubmit() {
+	event.preventDefault();
+
+	const data = new FormData(event.target);
+
+	const dataObject = Object.fromEntries(data.entries());
+
+	console.log(dataObject);
+
+	form.reset();
+}
