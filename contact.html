@@ -21,6 +21,37 @@
         <h2>Contact Cannons Coffee</h2>
         <p>Coming soon!</p>
        
+        <form id="form"> 
+
+            <label for="persons-name">Your Name</label>
+            <input type="text" id="persons-name" name="yourname" placeholder="name here" required />
+    
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email" placeholder="youremail@gmail.com">
+    
+            <label for="phone">Enter your phone number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="111-222-1111" required />
+
+            <label for="coffee-select">choose your Favorite Coffee Flavor:</label>
+		<select id="coffee-select" name="coffee">
+			<option value="1">Vanilla bean</option>
+			<option value="2">hazelnut</option>
+			<option value="3">regular</option>
+		</select>
+
+        <fieldset>
+			<legend>Your Interest:</legend>
+			<input type="radio" id="buyingcoffee" name="coffee" value="coffee" required>
+			<label for="buyingcoffee">buying coffee</label><br>
+
+			<input type="radio" id="seekingemployment" name="employment" value="employment">
+			<label for="seekingemployment">seeking employment</label>
+		</fieldset>
+
+        <button type="submit">Submit</button>
+
+        </form>
+    
             <div class="footer">
                 <img src="images/logo-footer.webp" alt="Cannons Coffee, Beans of Joy! Est. 2014 " />
                 <p>© 2024 Cannons Coffee. All Rights Reserved.</p>
