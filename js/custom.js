@@ -49,7 +49,7 @@ function onFormSubmit() {
 
     // Display thank-you message
     // messageDiv.innerHTML = `Thanks, ${name}! We've received your message about "${interest}". We'll contact you at ${email} or ${phone}. We're glad you like ${flavor} coffee!`;
-    let message =`Thanks, ${name}! We've received your message about ${coffeeSelect}. We'll contact you at ${email} or ${phone}. We're glad you like ${coffeeSelect} coffee!`;
+    let message =`Thanks, ${name}! We've received your message about ${comment}. We'll contact you at ${email} or ${phone}. We're glad you like ${coffeeSelect} coffee!`;
     console.log("first message to user", message);
     // console.log(message);
 
